@@ -1,0 +1,13 @@
+    .cat__hello {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: -10%;
+        margin-left: 10%;
+        font-size: 6em;
+        color:aquamarine; 
+        list-style: none;
+    }
+    .cat{
+        z-index: -1000;
+    }
