@@ -8,9 +8,9 @@ function plus(){
         //} else {
             //alert(`Nu, dopustium, myau...`);
         //}
-    //return sum = Number(number1) + Number(number2); 
     alert(sum);   
 }
+return sum; 
 }
 
 function mult(){
@@ -20,9 +20,9 @@ function mult(){
     if (number1 === null || number2 === null) {
         alert(`:( `);
     } else {
-    //return mult_res = Number(number1) * Number(number2);
     alert(mult_res);
     }
+return mult_res;
 }
 
 function minus(){
@@ -34,6 +34,7 @@ function minus(){
     } else {
     alert(minus_res);
 }
+return minus_res;
 }
 
 function divide(){
@@ -47,4 +48,5 @@ function divide(){
     } else {
         alert(divide_res);
     }
+return divide_res;
 }
