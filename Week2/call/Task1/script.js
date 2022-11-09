@@ -2,8 +2,10 @@ function InputFirstNum(){
     let number1 = document.querySelector('.num-first').value;
     //if (number1 === undefined) {
         //number1 = (`:( `);
-   // } else {
-    document.getElementById('num-first-result').innerHTML = number1; //write new info in some node
+    //} else {
+        //continue InputFirstNum;
+    //}
+    document.getElementById('num-first-result').innerHTML = number1; 
     return number1;
 }
 //}
@@ -80,5 +82,15 @@ function divide(){
 }
 
 function ChangeColor(){
-    pass
+    let elem = document.getElementById('num-first-result');
+    let elem2 = document.getElementById('num-min-result');
+    let elem3 = document.getElementById('num-divide-result');
+    elem.style.background = 'violet';
+    elem2.style.background = 'pink';
+    elem3.style.background = 'darkorchid';
+}
+
+function select(sender){
+    console.log(sender);
+    sender.classList.add("selected")
 }
