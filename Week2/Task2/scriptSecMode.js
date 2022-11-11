@@ -28,14 +28,14 @@ cats[10].src="./assets/img/purrr.jpg"
 cats[11].src="./assets/img/redcar.jpg";
 
 function ChangeMeForward(){
-    if (current < quantity) {
+    //if (current < quantity) {
         current++;
         document.images['purr'].src=cats[current+1].src;
-    }
+    //}
 }
 function ChangeMeBackward(){
-    if (current < quantity) {
+    //if (current < quantity) {
         current--;
         document.images['purr'].src=cats[current-1].src;
-    }
+   // }
 }
