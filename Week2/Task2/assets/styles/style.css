@@ -27,9 +27,9 @@ img{
     display: flex;
 }
 .div-change-forw__button{
-    display: flex; 
-    margin-top:6%;
-    margin-left: -570%;
+    display: flex;
+    margin-top: 450%;
+    margin-left: -250%;
     padding-top: -15%;
     padding-left: 9.3%;
     padding-right: 9.3%;
@@ -38,7 +38,8 @@ img{
 }
 .div-change-back__button{
     display: flex;
-    margin-left: -480%;
+    margin-left: -240%;
+    margin-top: 385%;
     padding-left: 1.3%;
     padding-right: 1.3%;
     text-align: center;
