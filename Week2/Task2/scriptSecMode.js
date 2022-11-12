@@ -34,6 +34,7 @@ cats[12].src="./assets/img/mur.webp";
 function ChangeMeForward(){
         if (current === 13){
             document.images['purr'].src=cats[0].src;
+            current = 1;
         }
         else{
             current++;
@@ -43,6 +44,7 @@ function ChangeMeForward(){
 function ChangeMeBackward(){
         if (current === 1){
             document.images['purr'].src=cats[12].src;
+            current = 12;
         }
         else{
             current--;
