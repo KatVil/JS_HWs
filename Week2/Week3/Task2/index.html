@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3468/3468377.png">
+    <title>Registration form</title>
+</head>
+<body>
+
+    <form class="form" action="" method="post">
+        <input class="input" type="text" id="name" placeholder="Name" onclick="CheckName()" onkeyup="document.getElementById('result').innerText = document.getElementById('name').value">
+        <div id="result"></div>
+        <input class="input" type="email" id="email" placeholder="E-mail" onkeyup="document.getElementById('result-em').innerText = document.getElementById('email').value">
+        <div id="result-em"></div>
+        <input class="input" type="tel" placeholder="Phone" id="phone" onmouseleave="CheckPhone()" onkeyup="document.getElementById('result-phone').innerText = document.getElementById('phone').value">
+        <div id="result-phone"></div>
+        <div class="password">
+            <input class="input" type="password" id="password-input" name="password" placeholder="Password">
+            <input class="input" type="password" id="password-input-repeat" name="password" placeholder="Please repeat password">
+            <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+        </div>
+        <button class="btn" type="submit">Register</button>
+      </form>
+
+    <!--input type="text" class="name">
+    <button type="button" onclick="InputName()">Submit your name</button>  
+
+
+    <input type="text" class="surname">
+    <button type="button" onclick="InputSurname()">Submit your surname</button>  
+
+
+    <input type="file" class="upload" id="photo-upload">
+    <button type="button" onclick="InputAvatar()">Submit your avatar</button>  
+
+    <input type="text" class="login">
+    <button type="button" onclick="InputLogin()">Submit your login</button>  
+
+    <input type="text" class="password">
+    <button type="button" onclick="InputPassword()">Submit your password</button-->  
+
+    <script src="./script.js"></script>
+</body>
+</html>

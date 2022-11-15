@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+    background-color: #f8f8f8;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .form {
+    max-width: 320px;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: #fff;
+  }
+  
+  .input {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    
+    border: 1px solid #ccc;
+    
+    font-family: inherit;
+    font-size: 16px;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    
+    border: 0;
+    background-color: #76407b;
+    cursor: pointer;
+    
+    font-family: inherit;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .password {
+	position: relative;
+}
+#password-input {
+	width: 100%;
+}
+.password-control {
+	width: 20px;
+	height: 20px;
+    position: absolute;
+    top: 6px;
+	right: 10px;
+    display: inline-block;
+	background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+}
+.password-control.view {
+	background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+}
+
+  .btn:hover {
+    background-color: #5e2f62;
+  }
