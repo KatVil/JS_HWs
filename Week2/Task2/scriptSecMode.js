@@ -32,14 +32,22 @@ cats[11].src="./assets/img/redcar.jpg";
 cats[12].src="./assets/img/mur.webp";
 
 function ChangeMeForward(){
-    //if (current < quantity) {
-        current++;
-        document.images['purr'].src=cats[current+1].src;
-    //}
+        if (current === 13){
+            document.images['purr'].src=cats[0].src;
+            current = 1;
+        }
+        else{
+            current++;
+            document.images['purr'].src=cats[current+1].src;
+        }
 }
 function ChangeMeBackward(){
-    //if (current < quantity) {
-        current--;
-        document.images['purr'].src=cats[current-1].src;
-   // }
+        if (current === 1){
+            document.images['purr'].src=cats[12].src;
+            current = 12;
+        }
+        else{
+            current--;
+            document.images['purr'].src=cats[current-1].src;
+        }
 }
