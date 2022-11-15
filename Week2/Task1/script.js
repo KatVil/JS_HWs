@@ -64,10 +64,9 @@ function divide(){
     let number1 = document.querySelector('.num-first').value;
     let number2 = document.querySelector('.num-sec').value;
     let divide = Number(number1) / Number(number2); 
-    
-   // if (divide === Infinity){
-        //divide = (`Division by 0 is permitted!`);
-    //} else {
+    if (divide === Infinity || number2 === 0){
+        alert(`Division by 0 is permitted!`);
+    } else {
     document.getElementById('num-divide-result').innerHTML = divide;
     //}
     //if (number1 === null || number2 === null) {
@@ -79,6 +78,7 @@ function divide(){
     //alert(sum);   
 //}
     return divide; 
+}
 }
 
 function ChangeColor(){
