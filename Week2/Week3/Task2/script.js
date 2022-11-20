@@ -28,13 +28,18 @@ function CheckPhone(){
 }
 
 function CheckEmail(){
-    let resultEm=document.getElementById("email").value;
-    if (resultEm.HTMLElement.innerText.includes('@')){
-        console.log(resultEm);
+    let result=document.getElementById("email").value;
+    if (result == ''){
+        alert('Please fill the name field')
     }
-    else{
-        alert('Please enter the correct email');
-    }
+    
+    //let resultEm=document.getElementById("email").value;
+   // if (resultEm.HTMLElement.innerText.includes('@')){
+    //    console.log(resultEm);
+   // }
+   /// else{
+    //    alert('Please enter the correct email');
+    //}
 }
 
 function CheckPass(){
@@ -43,4 +48,13 @@ function CheckPass(){
     if (resultPassOne != resultPassTwo){
         alert('Passwords does not match!')
     }    
+}
+
+function Welcome(){
+    let resultName=document.getElementById("name").value;
+    let resultEmail=document.getElementById("email").value;
+    let resultPassword=document.getElementById("password-input").value;
+    if (resultName != "" && resultEmail != "" && resultPassword != "" ){
+        alert('Welcome! :)')
+    }
 }
