@@ -3,7 +3,7 @@ document.querySelector('.themetoggle').addEventListener('click', (event) => {
     if (localStorage.getItem('theme') === 'dark'){
         localStorage.removeItem('theme');
     }
-    else if (localStorage.getItem('theme') === 'blue'){
+    else if (localStorage.getItem('theme') === 'light'){
             localStorage.setItem('theme', 'blue');
     }
     else{
@@ -33,21 +33,15 @@ addDarkClassToHTML();
 
 function show(){
     if (document.getElementById("theme").value == "light"){
-        document.body.style.backgroundColor = 'white';
-        document.style.color = "black";
+        document.body.style.backgroundColor = 'pink';
+        document.body.style.color = "violet";
 }
-}
-
-function show(){
-    if (document.getElementById("theme").value == "blue"){
+    else if (document.getElementById("theme").value == "blue"){
         document.body.style.backgroundColor  = 'blue';
-        document.style.color = "white";
+        document.body.style.color = "grey";
 }
-}
-
-function show(){
-    if (document.getElementById("theme").value == "dark"){
+    else if (document.getElementById("theme").value == "dark"){
         document.body.style.backgroundColor  = 'black';
-        document.style.color = "white";
+        document.body.style.color = "green";
 }
 }

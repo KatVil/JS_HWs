@@ -1,4 +1,9 @@
 
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
 html, body {
     font-size: 18px;
     font-family: sans-serif;
@@ -16,7 +21,7 @@ html.dark, .dark body {
 html.blue, .blue body {
     font-size: 18px;
     font-family: sans-serif;
-    background: rgb(0, 0, 0);
+    background: rgb(33, 4, 150);
     color: #fff;
 }
 
