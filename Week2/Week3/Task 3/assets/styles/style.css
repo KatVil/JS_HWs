@@ -1,0 +1,102 @@
+
+html, body {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #222;
+}
+
+html.dark, .dark body {
+    font-size: 18px;
+    font-family: sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+
+html.blue, .blue body {
+    font-size: 18px;
+    font-family: sans-serif;
+    background: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #f1f1f1;
+    padding: 30px;
+}
+
+.dark .container {
+    background: #3c3c3c;
+}
+
+.dark a {
+    color: #fff;
+}
+
+.blue .container {
+    background: #03005e;
+}
+
+.blue a {
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+section, .section {
+    margin-bottom: 30px;
+}
+
+select, textarea {
+    background: none;
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: .9rem;
+    outline: none;
+}
+
+
+
+.section {
+    margin: 10px 0 10px 0;
+    padding: 10px 0 30px 0;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.section div {
+    margin-bottom: 20px;
+}
+
+
+
+.gallery {
+  display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.gallery img {
+    max-width: 300px;
+    margin: 20px;
+}
