@@ -11,7 +11,7 @@ function show_hide_password(target){
 }
 
 function CheckName(){
-    let result=document.getElementById("name").value;
+    let result=document.querySelector(".input-name").value;
     if (result == ''){
         alert('Please fill the name field')
     }
@@ -19,8 +19,8 @@ function CheckName(){
 }
 
 function CheckPhone(){
-    let resultPhone=document.getElementById("phone").length;
-    console.log(resultPhone)
+   // let resultPhone=document.getElementById("phone").length;
+    let resultPhone=document.querySelector(".input-phone").length;
     if (resultPhone < 12 || resultPhone > 15){
         alert('Please enter the correct phone')
     }
@@ -28,7 +28,7 @@ function CheckPhone(){
 }
 
 function CheckEmail(){
-    let result=document.getElementById("email").value;
+    let result=document.querySelector(".input-email").value;
     if (result == ''){
         alert('Please fill the name field')
     }

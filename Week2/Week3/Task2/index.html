@@ -11,11 +11,11 @@
 <body>
 
     <form class="form" action="" method="post">
-        <input class="input" type="text" id="name" placeholder="Name" onclick="CheckName()" onkeyup="document.getElementById('result').innerText = document.getElementById('name').value">
+        <input class="input input-name" type="text" id="name" placeholder="Name" onclick="CheckName()" onkeyup="document.getElementById('result').innerText = document.getElementById('name').value">
         <div id="result"></div>
-        <input class="input" type="email" id="email" placeholder="E-mail" onclick="CheckEmail()" onkeyup="document.getElementById('result-em').innerText = document.getElementById('email').value">
+        <input class="input input-email" type="email" id="email" placeholder="E-mail" onclick="CheckEmail()" onkeyup="document.getElementById('result-em').innerText = document.getElementById('email').value">
         <div id="result-em"></div>
-        <input class="input" type="tel" placeholder="Phone" id="phone" onmouseup="CheckPhone()" onkeyup="document.getElementById('result-phone').innerText = document.getElementById('phone').value">
+        <input class="input input-phone" type="tel" placeholder="Phone" id="phone" onmouseup="CheckPhone()" onkeyup="document.getElementById('result-phone').innerText = document.getElementById('phone').value">
         <div id="result-phone"></div>
         <div class="password">
             <input class="input" type="password" id="password-input" onmouseup="CheckPass()" name="password" placeholder="Password">
