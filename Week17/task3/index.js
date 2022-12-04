@@ -18,13 +18,17 @@ function formatDate(date) {
     minutes = minutes < 10 ? '0' + minutes : minutes;
   
     if (diffSec < 1) {
+      alert('прямо сейчас');
       return 'прямо сейчас';
     } else if (diffMin < 1) {
-      return `${diffSec} сек. назад`
+      alert(`${diffSec} сек. назад`);
+      return `${diffSec} сек. назад`   ;   
     } else if (diffHour < 1) {
-      return `${diffMin} мин. назад`
+      alert(`${diffMin} мин. назад`);
+      return `${diffMin} мин. назад`;
     } else {
-      return `${dayOfMonth}.${month}.${year} ${hour}:${minutes}`
+      alert(`${dayOfMonth}.${month}.${year} ${hour}:${minutes}`);
+      return `${dayOfMonth}.${month}.${year} ${hour}:${minutes}`;
     }
   }
-alert(formatDate(date))
+alert(formatDate(date));
