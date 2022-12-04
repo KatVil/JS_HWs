@@ -1,3 +1,4 @@
+let date = new Date(2022,6,21,0,5,4) //for test
 function formatDate(date) {
     let dayOfMonth = date.getDate();
     let month = date.getMonth() + 1;
@@ -26,3 +27,4 @@ function formatDate(date) {
       return `${dayOfMonth}.${month}.${year} ${hour}:${minutes}`
     }
   }
+alert(formatDate(date))
