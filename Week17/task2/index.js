@@ -1,5 +1,7 @@
 const input = document.querySelector('#comment');
 const container = document.querySelector('.cont_messages');
+let str = input.value();
+
 
 input.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
