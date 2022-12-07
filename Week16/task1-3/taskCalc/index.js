@@ -16,7 +16,8 @@ const addOne = () => {
         error.innerHTML = 'ERR'
     }
     result.innerHTML = arr;
-    result.value = '';
+    //result.value = '';
+    //document.getElementById("input_num").value = "";
 }
 const getSum = () => {
     let res = 0;
