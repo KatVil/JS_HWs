@@ -9,7 +9,7 @@ let nissanModels = ['d1', 'a2', 'tt', 'd3'];
 
 const selectBrand = () => {
 
-    if(brands.value == '0'){
+    if(brands.value === '0'){
         models.getElementsByClassName.display = 'none';
     }else{
         models.getElementsByClassName.display = 'block';
@@ -17,22 +17,22 @@ const selectBrand = () => {
     
 
     let options = ''
-    if(brands.value = '300'){
+    if(brands.value === '300'){
         for(let model of audiModels){
             options += `<option value='300'>${model}</option>`
         }     
     }
-    else if (brands.value = '100'){
+    else if (brands.value === '100'){
         for(let model of jigulModels){
             options += `<option value='100'>${model}</option>`
         }     
     }
-    else if (brands.value = '400'){
+    else if (brands.value === '400'){
         for(let model of kiaModels){
             options += `<option value='400'>${model}</option>`
         }     
     }
-    else if (brands.value = '500'){
+    else if (brands.value === '500'){
         for(let model of nissanModels){
             options += `<option value='500'>${model}</option>`
         }     
