@@ -10,10 +10,17 @@
 <body>
     <div class="container">
         <section class="cont_messages"></section>
+        <div>
+            <input type="text" placeholder="Введите имя" name="author" id="author" value="" class="inputs">
+        </div>
+        <div>
+            <input type="file" placeholder="Загрузите аватар" name="ava" id="ava" value="" class="inputs">
+        </div>
+        <button onclick="save()">Сохранить</button>
         <div class="input">
             <textarea id="comment" cols="30" rows="5"></textarea>
         <label for="comment"></label>
-        <button class="sendMessage" onclick="sendComment()">Отправить комментарий!</button>
+        <button class="sendMessage" onmouseover="checkAll()" onclick="sendComment()">Отправить комментарий!</button>
         </div>
     </div>
     <script src="./index.js"></script>
