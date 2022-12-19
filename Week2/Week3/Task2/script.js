@@ -23,23 +23,22 @@ function CheckPhone(){
     let resultPhone=document.querySelector(".input-phone").length;
     if (resultPhone < 12 || resultPhone > 15){
         alert('Please enter the correct phone')
-    }
-    
+    }    
 }
 
 function CheckEmail(){
+    let mailFormat =  /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
     let result=document.querySelector(".input-email").value;
     if (result == ''){
         alert('Please fill the name field')
     }
-    
-    //let resultEm=document.getElementById("email").value;
-   // if (resultEm.HTMLElement.innerText.includes('@')){
-    //    console.log(resultEm);
-   // }
-   /// else{
-    //    alert('Please enter the correct email');
-    //}
+    if (email.value.match(mailFormat)) {
+        return true;
+    }
+    else {
+        alert("Ваш адрес электронной почты введен неверно!");
+        return false;
+    }
 }
 
 function CheckPass(){
@@ -57,4 +56,23 @@ function Welcome(){
     if (resultName != "" && resultEmail != "" && resultPassword != "" ){
         alert('Welcome! :)')
     }
+}
+let errors = [];
+function checkValidity(input) {
+    let validity = input.validity;
+    if (validity.patternMismatch) 
+		{ errors.push('Неверный формат заполнения'); }
+    if (validity.typeMismatch) 
+		{ errors.push('Неверный тип входных данных'); }
+    if (validity.valueMissing) 
+		{ errors.push('Отсутствует обязательное значение'); }
+}
+
+function checkAll() {
+let inputs = document.querySelectorAll("input");
+for (let input of inputs) {
+    checkValidity(input);
+}
+let errorDiv = document.querySelector('.errorsInfo');
+errorDiv.innerHTML = errors.join('. \n');
 }

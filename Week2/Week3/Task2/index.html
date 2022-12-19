@@ -13,7 +13,7 @@
     <form class="form" action="" method="post">
         <input class="input input-name" type="text" id="name" placeholder="Name" onclick="CheckName()" onkeyup="document.getElementById('result').innerText = document.getElementById('name').value">
         <div id="result"></div>
-        <input class="input input-email" type="email" id="email" placeholder="E-mail" onclick="CheckEmail()" onkeyup="document.getElementById('result-em').innerText = document.getElementById('email').value">
+        <input class="input input-email" type="text" id="email" placeholder="E-mail" onclick="CheckEmail()" onkeyup="document.getElementById('result-em').innerText = document.getElementById('email').value">
         <div id="result-em"></div>
         <input class="input input-phone" type="tel" placeholder="Phone" id="phone" onmouseup="CheckPhone()" onkeyup="document.getElementById('result-phone').innerText = document.getElementById('phone').value">
         <div id="result-phone"></div>
@@ -22,7 +22,7 @@
             <input class="input" type="password" id="password-input-repeat" onmouseup="CheckPass()" name="password" placeholder="Please repeat password">
             <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
         </div>
-        <button class="btn" type="submit" onclick="Welcome()">Register</button>
+        <button class="btn" type="submit" onmouseover="checkAll()" onclick="Welcome()">Register</button>
       </form>
     <script src="./script.js"></script>
 </body>
